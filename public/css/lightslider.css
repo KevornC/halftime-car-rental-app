@@ -80,7 +80,7 @@
 }
 
 .lSSlideWrapper.usingCss .lSFade>*.active {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 
@@ -103,7 +103,7 @@
 }
 
 .lSSlideOuter .lSPager.lSpg>li a {
-    background-color: #222222;
+    /* background-color: #222222; */
     border-radius: 30px;
     display: inline-block;
     height: 8px;
