@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use Livewire\Component;
+use LivewireUI\Modal\ModalComponent;
 
-class LiveRegister extends Component
+class LiveRegister extends ModalComponent
 {
     public function render()
     {

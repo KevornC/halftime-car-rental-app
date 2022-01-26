@@ -13,15 +13,19 @@ homepage
           <span>New Collection</span>
         </h1>
         <p class="text-lg max-w-md">We are a safe and secure rental platform that offer the best vehicles to meet your needs on demand. </p>
-      <button class="navcolor inline-block  rounded-full text-lg text-white font-semibold px-10 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 hover:text-blue-dark mt-5" type="button" x-data="{}" x-on:click="window.livewire.emitTo('signup-modal', 'show')">Register</button>
-      </div>
+      {{-- <button class="navcolor inline-block  rounded-full text-lg text-white font-semibold px-10 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 hover:text-blue-dark mt-5" type="button" x-data="{}" x-on:click="window.livewire.emitTo('signup-modal', 'show')">Register</button> --}}
+        {{-- Start Modal --}}
+  <button class="navcolor inline-block  rounded-full text-lg text-white font-semibold px-10 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6 hover:text-blue-dark mt-5" onclick="Livewire.emit('openModal', 'live-register')">Register</button>
+  @livewire('livewire-ui-modal')  
+  {{-- End Modal --}}
+</div>
       <div class="">
           <a href="#">
         <img src="image/phone.png" />
           </a>
     </div>
     </div>
-    <livewire:signup-modal />
+    {{-- <livewire:live-register /> --}}
   </section>
 
   <h1 class="text-3xl font-semibold font-serif text-center mb-2">

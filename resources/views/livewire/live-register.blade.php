@@ -1,6 +1,6 @@
 {{-- Be like water. --}}
 <div>
-    <div class="  bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+    <div class="    py-6 flex flex-col justify-center sm:py-12">
         <div class="relative px-4 py-10 bg-white sm:rounded-1xl sm:p-20">
             <h1 class="text-black text-center text-lg pb-10">Please ensure that all the information provided is correct before submitting</h1>
             <div class="grid sm:grid-cols-2 gap-4">
