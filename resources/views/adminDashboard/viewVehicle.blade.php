@@ -6,9 +6,13 @@ Vehicle Listing
 Vehicle Listing 
 @endsection
 @section('content')
-   
-    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8 mt-16">
-        <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+
+<div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8 mt-16">
+  {{-- Start Modal --}}
+  <button class=" bg-blue-700 text-white p-2 rounded-sm" onclick="Livewire.emit('openModal', 'add-vehicle')">Add Vehicle</button>
+  @livewire('livewire-ui-modal')  
+  {{-- End Modal --}}
+  <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
           <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-blue-50">
               <tr>

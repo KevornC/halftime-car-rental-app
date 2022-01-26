@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
-    <style>
+  <style>
       body {
           font-family: 'Nunito', sans-serif;
       }
@@ -28,6 +28,14 @@
     /* border-color: rgba(35, 56, 118, var(--border-opacity)); */
 }
   </style>
+
+    <!-- Styles -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    @livewireStyles
+    
+    <!-- Scripts -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <title>@yield('title')</title>
    </head>
 <body>
@@ -178,6 +186,7 @@
     </footer>
   </div>
 </div>
-
+{{-- @livewire('livewire-ui-modal') --}}
+@livewireScripts
 </body>
 </html>

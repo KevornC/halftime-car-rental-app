@@ -38,28 +38,19 @@
     <div class="flex flex-col w-64">
       <!-- Sidebar component, swap this element with another sidebar if you like -->
       <div class="flex flex-col flex-grow pb-4 overflow-y-auto bg-white ">
-        <div class="px-4 pt-1.5 pb-1.5 navcolor">
-         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="53" viewBox="0 0 60 53">
-            <g id="Group_73604" data-name="Group 73604" transform="translate(-29 -101)">
-              <text id="HT" transform="translate(40 138)" fill="#fff" stroke="#1384e3" stroke-width="1" font-size="29" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">HT</tspan></text>
-              <g id="Path_38263" data-name="Path 38263" transform="translate(29 101)" fill="none">
-                <path d="M30,0C46.569,0,60,11.864,60,26.5S46.569,53,30,53,0,41.136,0,26.5,13.431,0,30,0Z" stroke="none"/>
-                <path d="M 30 5 C 16.21495056152344 5 5 14.64486312866211 5 26.5 C 5 38.35513687133789 16.21495056152344 48 30 48 C 43.78504943847656 48 55 38.35513687133789 55 26.5 C 55 14.64486312866211 43.78504943847656 5 30 5 M 30 0 C 46.56853866577148 0 60 11.86444854736328 60 26.5 C 60 41.13553619384766 46.56853866577148 53 30 53 C 13.43146133422852 53 0 41.13553619384766 0 26.5 C 0 11.86444854736328 13.43146133422852 0 30 0 Z" stroke="none" fill="#fbf6f6"/>
-              </g>
-            </g>
-          </svg>
-          
+        <div class="px-4 pt-3 pb-3 navcolor">
+         <a href="{{route('homepage')}}"> <img class="h-10 w-10 self-center rounded-full" src="{{url('image/logo.png')}}" /> </a>
         </div>
         <div class="flex w-full justify-center">
           <img class="h-32 mt-10 rounded-full" src="{{url('image/propic.jpg')}}" alt="profile">
         </div>
         <div class="">
-         <p class="mt-5 mb-10 font-bold text-center">Dashboard</p>
+          <a href="{{route('userDashboard')}}"> <p class="mt-5 mb-10 font-bold text-center">Dashboard</p></a>
         </div>
         <div class="flex flex-col flex-grow mt-5">
           <nav class="flex-1 px-2 space-y-1 bg-white">
             <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
-            <a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
+            <a href="{{route('homepage')}}" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
               <!--
                 Heroicon name: outline/home
 
@@ -71,7 +62,7 @@
               Home
             </a>
 
-            <a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
+            <a href="{{route('rentSearch')}}" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
               <!-- Heroicon name: outline/users -->
               <svg class="flex-shrink-0 w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -79,7 +70,7 @@
               Rent a Car
             </a>
 
-            <a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:border-blue-500 hover:bg-blue-200 hover:text-blue-800 group">
+            <a href="{{route('rentHistory')}}" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:border-blue-500 hover:bg-blue-200 hover:text-blue-800 group">
               <!-- Heroicon name: outline/folder -->
               <svg class="flex-shrink-0 w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
@@ -87,7 +78,7 @@
               Rental History
             </a>
 
-            <a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
+            <a href="{{route('profile')}}" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
               <!-- Heroicon name: outline/calendar -->
               <svg class="flex-shrink-0 w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -95,7 +86,7 @@
               Edit Profile
             </a>
 
-            <a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
+            <a href="{{route('helpCenter')}}" class="flex items-center px-2 py-2 text-sm font-medium text-gray-600 border-l rounded-md hover:text-blue-800 hover:border-blue-500 hover:bg-blue-200 group">
                <!-- Heroicon name: outline/inbox -->
               <svg class="flex-shrink-0 w-6 h-6 mr-3 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
@@ -122,7 +113,7 @@
       
       <div class="flex items-center justify-items-center">
         <div class="flex flex-1">
-           <p class="text-3xl font-bold text-white"> Half Time Car Rental </p>
+          <a href="{{route('homepage')}}"> <p class="text-3xl font-bold text-white"> Half Time Car Rental </p></a>
         </div>
       </div>
     </div>
