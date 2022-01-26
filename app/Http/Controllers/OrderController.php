@@ -12,4 +12,8 @@ class OrderController extends Controller
    public function rentHistory(){
        return view('userDashboard.rentHistory');
    }
+
+   public function viewOL(){
+    return view('adminDashboard.viewOrder');
+}
 }

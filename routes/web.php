@@ -24,6 +24,9 @@ Route::get('halftimerental/register',[App\Http\Controllers\SignupController::cla
 //Admin Routes
 Route::get('halftimerental/login/admin',[App\Http\Controllers\LoginController::class,'loginAdmin'])->name('showAdminLogin');
 Route::get('halftimerental/admin/dashboard',[App\Http\Controllers\HomeController::class,'adminDashboard'])->name('adminDashboard');
+Route::get('halftimerental/admin/dashboard/memberlisting',[App\Http\Controllers\MemberController::class,'viewML'])->name('viewML');
+Route::get('halftimerental/admin/dashboard/orderlisting',[App\Http\Controllers\OrderController::class,'viewOL'])->name('viewOL');
+Route::get('halftimerental/admin/dashboard/vehiclelisting',[App\Http\Controllers\VehicleController::class,'viewVL'])->name('viewVL');
 //User Routes
 Route::get('halftimerental/user/dashboard',[App\Http\Controllers\HomeController::class,'userDashboard'])->name('userDashboard');
 Route::get('halftimerental/user/dashboard/search',[App\Http\Controllers\OrderController::class,'rentSearch'])->name('rentSearch');

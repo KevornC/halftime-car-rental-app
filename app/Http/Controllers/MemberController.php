@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class MemberController extends Controller
 {
-    //
+    public function viewML(){
+        return view('adminDashboard.viewMember');
+    }
 }
