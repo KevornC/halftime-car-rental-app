@@ -22,4 +22,8 @@ class HomeController extends Controller
     public function userDashboard(){
         return view('userDashboard.userDashboard');
     }
+    // userAdmin
+    public function adminDashboard(){
+        return view('adminDashboard.adminDashboard');
+    }
 }

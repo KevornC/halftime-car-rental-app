@@ -1,9 +1,9 @@
-@extends('layouts.userDashboard')
+@extends('layouts.adminDashboard')
 @section('title')
 Homepage
 @endsection
 @section('header')
-  Dashboard  
+  Administrator Dashboard  
 @endsection
 @section('content')
  <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
